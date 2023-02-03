@@ -1,0 +1,569 @@
+/* 1-common style------------------------------------------------------------------------------------------------------------------ */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    text-transform: capitalize;
+    text-align: center;
+}
+.overlay1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.overlay1::after{
+    position: absolute;
+    border-radius: 50px;
+    content: "";
+    width: 0;
+    height: 0;
+    top:0; left: 0;
+    background-color: rgba(0, 0, 20, 0.3);
+}
+.overlay1:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    transition: 2s;
+}
+.overlay2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.overlay2::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top:0; left: 0;
+    background-color: rgba(225, 225, 225,0.5);
+}
+.overlay2:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 2s;
+}
+/* 2-general style--------------------------------------------------------------------------------------------------------------- */
+strong{
+    font-family: cursive;
+    font-size: 40px;
+    margin-top: 200px;
+    display: block;
+    text-transform: uppercase;
+}
+b{
+    font-family: cursive;
+    font-size: 30px;
+    margin-top: 200px;
+    display: block;
+    text-transform: uppercase;
+}
+i{
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+}
+.section{
+    width: 100%;
+    height: 100vh;
+    margin-top: 20px;
+    overflow: auto;
+}
+.message{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 30; right: 30;
+    z-index: 100;
+}
+.icon0{
+    color: rgb(192, 143, 143);
+    font-size: 70px;
+    cursor: pointer;
+}
+.message .icon0{
+    line-height: 100px;
+}
+/* 3-sections-------------------------------------------------------------------------------------------------------------------- */
+/* section----------------------------------------------------------------------------------------------------------------------- */
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 20, 0.5);
+    border-radius: 30px;
+    transform: scaleX(95%);
+    position: fixed;
+    z-index: 100;
+    overflow: auto;
+}
+.logo{
+    width: 140px;
+    height: 60px;
+    margin-left: 70px;
+    float: left;
+}
+.header-list{
+    list-style: none;
+    float: right;
+}
+.header-list li{
+    display: inline-block;
+}
+.header-list li a{
+    color: white;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.header-list a:hover{
+    background-color: rgb(192, 143, 143);
+}
+/* section-block----------------------------------------------------------------------------------------- */
+.block{
+    background-image: url(../IMG/1111.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.block-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 0; left: 0;
+}
+.block-content{
+    font-family: cursive;
+    width: 50%;
+    position: absolute;
+    top: 50%;  left: 50%;
+    transform: translate(-50%, -50%);
+}
+.block-t{
+    font-size: 65px;
+}
+.block-p{
+    font-size: 35px;
+    margin: 30px  0px;
+}
+.block-btn{
+    width: 20%;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px 0px;
+}
+.btn0{
+    background-color: gainsboro;
+}
+/* section1----------------------------------------------------------------------------------- */
+.main-p1{
+    margin-left: -1200px;
+}
+hr{
+    transform: scaleX(65%);
+    margin-top: -20px;
+}
+.sec1{
+    margin-top: 50px;
+    height: 40vh;
+    background-color: rgb(224, 177, 177);
+}
+.sec1-box{
+    width: 90%;
+    margin: 1.9% auto;
+    overflow: auto;
+}
+.sec1-contant{
+    width: 25%;
+    height: 80%;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    position: relative;
+}
+.con1{
+    margin: 0 12.5%;
+}
+.icon1{
+    margin: 20px 0px;
+}
+.p1{
+    font-size: 20px;
+    margin: 15px 0px;
+}
+.link1{
+    margin-top: 40px;
+}
+/* section2----------------------------------------------------------------------------------- */
+.sec2{
+    height: 130vh;
+    margin-top: 200px;
+    background-color: rgb(224, 177, 177);
+}
+.sec2-box{
+    width: 75%;
+    margin: auto; 
+    overflow: auto;
+}
+.sec2-contant1{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+.sec2-contant2{
+    width: 35%;
+    height: 90%;
+    float: left;
+    margin: 4% 2.5%;
+}
+.imgdiv2{
+    width: 100%;
+    height: 48%;
+}
+.imgdiv2 img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.imgdiv2 img:hover{
+    opacity: 1;
+}
+.img2{
+    margin: 11% 0;
+}
+.imgdiv2-1{
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+.imgdiv2-1 img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.imgdiv2-1 img:hover{
+    opacity: 1;
+}
+.img2-1{
+    margin: 11% 0;
+}
+/* section3-------------------------------------------------------------------------------- */
+.sec3{
+    height: 70vh;
+}
+.sec3-box{
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    overflow: auto;
+}
+.sec3-contant{
+    width: 30%;
+    height: 35%;
+    border: 2px solid rgba(0, 0, 20, 0.3);
+    float: left;
+    position: relative;
+    text-align: left;
+}
+.con3{
+    margin: 0 65px;
+}
+.layer::after{
+    background-color: rgba(0, 0, 20, 0.3);
+    border-radius: 0;
+}
+.layer:hover::after {
+    opacity: 0.3;
+    transition: 1s;
+}
+.icon3{
+    color: rgb(192, 143, 143);
+    padding: 20px;
+}
+.span3{
+    font-size: 25px;
+}
+.p3{
+    font-size: 20px;
+    text-align: left;
+    margin-left: 80px;
+}
+/* section4------------------------------------------------------------------------------------- */
+.sec4{
+    height: 60vh;
+    margin-top: 200px;
+    background-color: rgba(221, 208, 208, 0.3);
+}
+.sec4-box{
+    width: 65%;
+    height: 60%;
+    margin-top: 100px;
+    float: left;
+    text-align: left;
+}
+.span4{
+    padding: 30px 100px;
+    font-size: 30px;
+    font-weight: 900;
+    position: absolute;
+}
+.y{
+    width: 250px;
+    border: 2px solid black;
+    margin: 70px 70px;
+    position: absolute;
+}
+.ul4{
+    padding: 100px 150px;
+    font-size: 20px;
+    list-style: square;
+    line-height: 35px;
+}
+.imgdiv4{
+    width: 35%;
+    height: 60%;
+    float: left;
+    margin-top: 100px;
+    position: relative;
+}
+.img4{
+    width: 60%;
+    height: 40%;
+    position: absolute;
+    top: 0; left: 0;
+    transform: translate(30%, 60%);
+}
+/* section5------------------------------------------------------------------------------------ */
+.section57{
+    width: 100%;
+    height: 50vh;
+    margin-top: 200px;
+    background: url(../IMG/1\ \(5\).jpg) center fixed;
+    background-size: cover;
+    position: relative;
+}
+.sec57{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.sec57-box{
+    width: 32.9vw;
+    height: 100%;
+    float: left;
+}
+.icon57{
+    color: rgb(192, 143, 143);
+    padding-top: 30%;
+}
+.b57{
+    color: white;
+    margin-top: 10px;
+}
+.span57{
+    font-size: 20px;
+    color: white;
+}
+/* section6----------------------------------------------------------------------------------- */
+.sec6{
+    height: 80vh;
+    margin-top: 50px;
+}
+.sec6-box{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+.sec6-contant{
+    width: 30%;  
+    height: 100%;
+    background-color: rgb(200, 155, 155);
+    border-radius: 50px;
+    float:left ;
+}
+.img6{
+    width: 80%;
+    height: 55%;
+    border: 3px solid black;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.con6{
+    margin: 0 5%;
+}
+.p6{
+    margin: 15px 0px;
+    font-size: 30px;
+}
+.div6{
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    border-radius: 50%;
+    background-color: rgb(224, 177, 177);
+    margin: 15px auto;
+    position: relative;
+}
+.del6{
+    margin: 20px 20px;
+    display: block;
+    position: absolute;
+}
+.pp6{
+    margin: 50px 20px;
+    position: absolute;
+}
+.btn6{
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+}
+.btn6:hover{
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+}
+.icon6{
+    font-size: 18px;
+    padding-right: 10px;
+}
+/* section7------------------------------------------------------------------------- */
+.sec7{
+    background: url(../IMG/1.jpg) center fixed;
+    background-size: cover;
+}
+/* section8------------------------------------------------------------------------- */
+.sec8{
+    height: 80vh;
+}
+.sec8-box{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.sec8-contant{
+    width: 30%;  
+    height: 80%;
+    float:left ;
+    position: relative;
+}
+.con2{
+    margin: 0 5%;
+}
+.img8{
+    width: 100%;  
+    height: 100%;
+    border-radius: 50px;
+}
+.div8{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    opacity: 0;
+}
+.sec8-contant:hover .div8{
+    opacity: 1;
+    transition: 2s;
+}
+.t8{
+    font-size:30px ;
+    margin-top: 50%;
+}
+.p8{
+    font-size: 20px;
+    margin: 5% 0;
+}
+.div8 a{
+    display: inline;
+    margin: 5px 10px;
+    color: black;
+}
+/* section9----------------------------------------------------------------------------------- */
+.sec9{
+    height: 60vh;
+}
+.sec9-box{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    overflow: auto;
+}
+.sec9-contant{
+    width: 30%;
+    height: 80%;
+    background-color: rgba(0, 0, 20, 0.8) ;
+    float: left;
+    position: relative;
+}
+.img9{
+    width: 100%;
+    height: 80%;
+}
+.icon9{
+    position: absolute;
+    top: 0; right: 20px;
+    color: rgb(192, 143, 143);
+    background-color: rgba(255, 255, 255,0.9);
+    visibility: hidden;
+    width: 60px;
+    height: 100px;
+}
+.overlay2 .icon9{
+    line-height: 100px;
+}
+.overlay2:hover .icon9{
+    visibility: visible;
+    opacity: 1;
+    transition: 2s;
+}
+.t9{
+    font-size: 20px;
+    margin: 10px 10px;
+    color: white;
+}
+.link9{
+    color: whitesmoke;
+    text-decoration: underline;
+    margin: 10px 10px;
+    text-align: right;
+}
+/* footer------------------------------------------------------------------------------------ */
+.footer{
+    width: 100%;
+    height: 40vh;
+    background-color: rgba(0, 0, 20, 0.8);
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+}
+.footer-list{
+    list-style: none;
+}
+.footer-list li{
+    display: inline-block;
+    margin: 30px 10px;
+}
+.footer-logo{
+    width: 140px;
+    height: 60px;
+    margin-top: 80px;
+}
+.footer-icon{
+    color: rgb(192, 143, 143);
+}
+.footer-icon:hover{
+    color: rgb(255, 255, 255);
+}
